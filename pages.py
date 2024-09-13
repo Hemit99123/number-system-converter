@@ -36,7 +36,7 @@ def page_two():
         return(output)
 
     # Input component: Text Input
-    decimal = int(st.text_input("Enter Binary (Base-2) integer:"))
+    decimal = st.number_input("Enter Binary (Base-2) integer:")
 
     # Button component
     if st.button('Submit'):
