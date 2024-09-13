@@ -29,6 +29,7 @@ def page_two():
     st.title('Decimal to Binary Converter')
 
     def convertDecimalToBinary(decimal: int):
+        decimal = int(decimal)
         output = ""
         while decimal > 0:
             output = str(decimal % 2) + output
@@ -36,7 +37,7 @@ def page_two():
         return(output)
 
     # Input component: Text Input
-    decimal = st.number_input("Enter Binary (Base-2) integer:")
+    decimal = st.text_input("Enter Decimal (base-10) integer:")
 
     # Button component
     if st.button('Submit'):
